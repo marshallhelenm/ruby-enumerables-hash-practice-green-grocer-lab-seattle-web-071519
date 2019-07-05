@@ -22,7 +22,8 @@ def apply_coupons(cart, coupons)
         name_w_coup = "#{coupon[:item]} W/COUPON"
         if !cart[name_w_coup]
           cart[name_w_coup] = {
-            price: coupon
+            price: coupon[:cost]/coupon[:num],
+            
           }
         else 
         end 
