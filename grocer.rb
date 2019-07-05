@@ -18,8 +18,9 @@ def apply_coupons(cart, coupons)
   coup_cart = []
   cart.each do |coupon|
     if cart.keys.include? coupon[:item]
-      
-    else
+      if 
+      end 
+    
     end
   end
 end
